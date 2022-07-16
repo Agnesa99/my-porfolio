@@ -1,0 +1,60 @@
+.home-page .footer-container{
+    background: url('../../../../assets/banner/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15% 5% 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        color: #fff;
+        font-weight: 400;
+        font-size: max(16px, 0.975vw);
+    }
+    h3{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: 400;
+        font-size: max(16px, 0.975vw);
+        svg{
+            margin-right: 12px;
+            font-size: 20px;
+        }
+    }
+    .links{
+        display: flex;
+         align-items: center;
+        justify-content: space-between;
+    }
+    .links .insta, .twitter, .in , .fb{
+        border: 1px solid white;
+        background: #fff;
+        border-radius: 27px;
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+        margin: 0 10px;
+        &:hover{
+         background: transparent;
+         svg{
+             color: #fff;
+         }
+        }
+        svg{
+            font-size: 20px;
+            color:rgb(18, 18, 19);
+        }
+    }  
+}
+@media(max-width:892px){
+    .home-page .footer-container{
+        padding-top: 45%;
+        display: flex;
+        flex-direction: column;
+       margin-top: -29%;
+       .links{
+        margin: 3% 0;
+       }
+    }
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=Comforter&family=Comforter+Brush&family=Dancing+Script&family=Economica&family=Fira+Sans+Condensed:ital@1&family=Gwendolyn&family=Hurricane&family=Montserrat:wght@400;500&family=Nothing+You+Could+Do&family=Old+Standard+TT:ital@0;1&family=Parisienne&family=Playfair+Display&family=Poppins:ital,wght@0,400;0,500;1,500&family=Satisfy&family=Shalimar&family=Urbanist:wght@500&family=Vujahday+Script&display=swap');
+
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    z-index: 2000;
+    padding:max(0.35vw, 5px) 3.5% ;
+    .mobile-nav{
+        display: none;
+    }
+}
+.navbar .logo-container{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+        h6{
+            color:rgb(10, 10, 10);
+            font-size: 22px;
+            font-weight: 400;
+            font-family: 'Urbanist', sans-serif;
+        }
+}
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+    .nav-link{
+        margin:0 max(7.5px, 1.07vw);
+        position: relative;
+    }
+    .inner-link{
+        display: flex;
+        align-items: center;
+        color:rgb(7, 7, 7);
+        font-size: max(15px, 0.875vw);
+        padding:max(18px, 1.3vw) max(3px, 0.2vw);
+        font-family: 'Urbanist', sans-serif;
+        text-decoration: none;
+    }
+}
+.navbar .nav-auth{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    .Switch{
+        display: flex;
+        align-items: center;
+        h3{
+            display: flex;
+            align-items: center;
+            margin-right: 9px;
+            margin-left: 9px;
+            svg{
+                font-size: 20px;
+                margin-right: 9px;
+            }
+        }
+    }
+}
+.nav__sticky, .white-nav{
+    transition:all 0.25s linear;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+    .logo-container{
+        h6{
+            color: #1f1f1f;
+            font-weight: 400;
+            
+        }
+    }
+    
+    .nav-links{
+        .inner-nav-link{
+            color:#111;
+        }
+    }
+}
+
+.nav__sticky{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+    .nav-links{
+        .inner-link{
+            color:#111;
+        }
+    }
+     .nav-auth .link1{
+        color:#111;
+    }
+}
+
+@media(max-width:856px){
+    .navbar{
+        .logo-container{
+            display: none;
+        }
+        .nav-links, .nav-auth{
+            display:none;
+          }
+      }
+      .navbar  .mobile-nav{ 
+        display: block;
+       }
+}
+body.dark-mode{
+    .navbar{
+        h6{
+            color: #fff;
+        }
+        .nav-links .inner-link{
+            color: #fff;
+        }
+        .nav-auth .Switch h3{
+            color: #fff;
+        }
+    }
+    .nav__sticky{
+        background: linear-gradient(rgb(26, 39, 92),rgb(26, 39, 92)) !important;
+        .mobile-nav{
+            color: #fff;
+        }
+       
+    }
+}

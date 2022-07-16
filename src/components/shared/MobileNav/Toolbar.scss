@@ -1,0 +1,86 @@
+.navbar .mobile-toolbar{
+    background-color: transparent;
+    position: fixed;
+    top:0;
+    left:0%;
+    width: 100%;
+    height: 77.5px;
+    display: flex;
+    z-index:2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 1% 10px;
+    .mobile-logo-row a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        h6{
+            color:rgb(20, 20, 20);
+            font-size: 22px;
+            font-weight: 400;
+            font-family: 'Urbanist', sans-serif;
+            margin-left: 10px;
+        }
+    }
+    button{
+        border:0;
+        background-color: transparent;
+        font-size: 35px;
+        cursor: pointer;
+        color:#0c0c0c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+        
+    }
+}
+.nav-white-text .mobile-toolbar{
+    background: none !important;
+    .mobile-logo-row a{
+        h6{
+            color:rgb(15, 15, 15);
+           
+        }
+    }
+    button{
+        color:rgb(3, 3, 3);
+    }
+}
+.navbar .toolbar__sticky{
+    box-shadow: rgba(99, 99, 99, 0.15) 0px 1.5px 2.5px 0px;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    background: #fff !important;
+    .mobile-logo-row a{
+        h6{
+            color:#111 !important;
+            
+        }
+    }
+    button{
+        color:#111 !important;
+    }
+}
+body.dark-mode{
+    .navbar .toolbar__sticky{
+        background: linear-gradient(rgb(26, 39, 92),rgb(26, 39, 92)) !important;
+        .mobile-logo-row a{
+            h6{
+                color:rgb(255, 255, 255) !important;    
+            }
+        }
+        button{
+            color:rgb(255, 255, 255) !important;
+        }
+    }
+    .navbar .mobile-toolbar{
+        h6{
+            color: #fff;
+        }
+        button{
+            color: #fff;
+        }
+    }
+}

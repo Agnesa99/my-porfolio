@@ -1,0 +1,37 @@
+.home-page{
+    overflow: hidden;
+}
+ .home-page .banner-container{
+    margin-top: 9%;
+    background: url('../../../../assets/banner/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 19% 5%;
+    .data{
+        text-align: center;
+        h1{
+            font-weight: 500;
+            font-size: max(26px, 1.6vw);
+        }
+        h3{
+            font-weight: 400;
+            font-size: max(16px, 0.975vw);
+        }
+        p{
+            font-size: max(16px, 0.875vw);
+            margin: 28px 0;
+        }
+    }
+}
+@media(max-width:658px){
+    .home-page .banner-container{
+        margin-top: 25%;
+    }
+}
+body.dark-mode{
+    .home-page .banner-container{
+        h1, h3 ,p {
+            color: #fff;
+        }
+    }
+}

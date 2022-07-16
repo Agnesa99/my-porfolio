@@ -1,0 +1,112 @@
+
+.select-language {
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    display:flex;
+    position:relative;
+    width:fit-content;
+    padding:6px 7.5px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    width:130px;
+    border: 1px solid rgb(8, 8, 8);
+    font-size: 14px;  
+}
+.select-language .arrow {
+    margin-left: 10px;
+}
+.select-language .single-language {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2.5px 6px 3.5px;
+    margin:3.5px 0;
+    width:100%;
+}
+.select-language .single-language .flag {
+    width: 35px;
+  }
+  .select-language .single-language .text {
+    color: gray;
+    flex: 1;
+    font-size: 15px;
+  }
+  .select-language .single-language:hover {
+    background-color: white;
+  }
+  .select-language .single-language.selected {
+    background-color:  white;
+  }
+  .select-language .dropdown {
+    position: absolute;
+    bottom: 40px;
+    left: 5px;
+    right: -5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(8, 8, 8, 0.89);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    border-bottom: none;
+    visibility: hidden;
+    padding: 4px 0px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .select-language:hover {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 1px solid transparent;
+  }
+  .select-language:hover .dropdown {
+    max-height: 650px;
+    visibility: visible;
+  }
+  .select-language img {
+    margin-right: 10px;
+    width: 30px;
+  }
+  .footer-container .select-language img {
+    margin-right: 10px;
+    width: 25px;
+   
+  }
+  @media(max-width:1368px){
+    .select-language{
+      width: 140px;
+      font-size: 12px;
+    }
+    .select-language img {
+      margin-right: 10px;
+      width: 25px;
+    }
+  }
+  @media(max-width:1168px){
+   .navbar .select-language{
+      margin: auto;
+      margin-top: 19px;
+    }
+   .footer-container .select-language{
+     margin-top: 0;
+   }
+  }
+  @media(max-width:500px){
+    .select-language{
+      margin: auto;
+      margin-top: 19px;
+      padding: 5px;
+      font-size: 12px;
+      width: 130px;
+    }
+    .select-language img {
+      margin-right: 10px;
+      width: 25px;
+    }
+  }
+  body.dark-mode{
+    .navbar  .select-language  {
+     background: #fff;
+    }  
+  }

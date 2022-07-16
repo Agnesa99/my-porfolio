@@ -1,0 +1,21 @@
+.mode-switcher-container .mode-switch{
+    background: rgb(245, 247, 248);
+    border:1px solid #ddd;
+    display: flex;
+    border-radius: max(20px, 1vw);
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max(20px, 1.5vw);
+        height: max(20px, 1.5vw);
+        border-radius: 50%;
+        margin:max(2px, 0.15vw);
+        color:#a4a4a5;
+        cursor: pointer;
+        font-size: max(13px, 0.7vw);
+    }
+    .active{
+        color:rgb(42, 12, 211);
+    }
+  }

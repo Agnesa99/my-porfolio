@@ -1,0 +1,150 @@
+ .skill-container{
+    margin-top: 2%;
+    h2{
+        text-align: center;
+        font-weight: 300;
+    }
+    .technologies{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 4% 0;
+        .item{
+            border:1px solid #e9e9e9;
+            box-shadow: 2px  2px 2px 2px rgb(233, 232, 232);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            width: 10%;
+            margin-right: 4%;
+            margin-bottom: 3%;
+            padding: 15px;
+            h4{
+                margin-left: 12px;
+                font-weight: 400;
+                font-size: max(14px, 0.975vw);
+            } 
+        }
+        .item{
+            display: flex;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+          }
+          .item:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 24px;
+            background: #3347f87a;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+          }
+          .item:hover, .item:focus, .item:active {
+            color: rgb(252, 252, 252);
+          }
+          .item:hover:before, .item:focus:before, .item:active:before {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          }
+        @-webkit-keyframes hvr-pulse {
+            25% {
+              -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+            }
+            75% {
+              -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+            }
+          }
+          @keyframes hvr-pulse {
+            25% {
+              -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+            }
+            75% {
+              -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+            }
+          }
+          .item{
+            display: flex;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          }
+          .item:hover, .item:focus, .item:active {
+            -webkit-animation-name: hvr-pulse;
+            animation-name: hvr-pulse;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+          }     
+    }
+}
+@media(max-width:1518px){
+    .skill-container .technologies .item{
+        width: 15%;
+    }
+}
+@media(max-width:1118px){
+    .skill-container .technologies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:934px){
+    .skill-container .technologies .item{
+        width: 25%;
+    }
+}
+@media(max-width:668px){
+    .skill-container .technologies {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       .item{
+        width: 47%;
+       }
+    }
+}
+body.dark-mode{
+  .home-page .skill-container .technologies .item{
+    border: none;
+    box-shadow: 1px  1px 1px 1px rgba(131, 111, 243, 0.534);
+    background: #0d0141;
+    h4{
+        color: #fff;
+    }
+
+  }
+  .skill-container{
+    h2{
+      color: #fff;
+    }
+  }
+}
