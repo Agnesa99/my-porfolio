@@ -4,6 +4,7 @@ import { CgClose } from 'react-icons/cg'
 import {FiMoon , FiSun} from 'react-icons/fi'
 import ThemeSwitcher from '../Navbar/ThemeSwitcher'
 import SelectLanguage from '../SelectLanguage/SelectLanguage'
+import { FormattedMessage } from 'react-intl'
 
 
 
@@ -27,7 +28,7 @@ const Sidebar = (props) => {
                 <div className='sidebar-dropdown'>
                     <div className='nav-sidebar-link' >
                         <Link to='/' className='nav-anchor'>
-                        Home
+                        <FormattedMessage id='title1'></FormattedMessage>
                         </Link>
                     </div>
                     
@@ -35,21 +36,21 @@ const Sidebar = (props) => {
 
                 <div className='nav-sidebar-link' >
                     <Link to='/' className='nav-anchor'>
-                    About Me
+                    <FormattedMessage id='title2'></FormattedMessage>
                     </Link>
                     
                 </div>
                 
                 <div className='nav-sidebar-link'  >
                     <Link to='/' className='nav-anchor'>
-                        References
+                    <FormattedMessage id='title3'></FormattedMessage>
                     </Link>
                   
                 </div>
                
                 <div className='nav-sidebar-link'>
                     <Link to='/' className='nav-anchor'>
-                   Contact
+                    <FormattedMessage id='title4'></FormattedMessage>
                     </Link>
                    
                 </div>

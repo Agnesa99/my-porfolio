@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div className='skill-container'>
         <h2> <FormattedMessage id='title16'></FormattedMessage></h2>
-        <div className='technologies' data-aos="flip-left">
+        <div className='technologies' data-aos="fade-down">
            {Data3.map((props) => {
                return (
                    <div className='item' data-aos="flip-left">

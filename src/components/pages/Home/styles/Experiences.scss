@@ -18,9 +18,6 @@
             width: 20%;
             padding: 10px;
             text-align: center;
-            &:hover{
-                box-shadow: -13px 0px 0px 0px rgb(110, 185, 185);
-            }
             .logo{
                 width: 110px;
                 height: 110px;
@@ -36,6 +33,53 @@
                 margin: 9px 0;
             }
         }
+        .card {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            box-shadow: -13px 0px 0px 0px rgb(12, 119, 119);
+            border: 1px solid #f3f3f3;
+           border-radius: 15px;
+          }
+          .card:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(12, 119, 119);
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            box-shadow: -13px 0px 0px 0px rgb(255, 255, 255);
+            border: 1px solid transparent;
+           border-radius: 15px;
+          }
+          .card:hover, .card:focus, .card:active {
+            color: white;
+          }
+          .card:hover:before, .card:focus:before, .card:active:before {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          }
     }
     .bottom{
         background: url('../../../../assets/banner/bck.png');

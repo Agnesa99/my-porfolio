@@ -31,7 +31,7 @@ function App() {
 
   return (
     <Router>
-     <Suspense fallback={<Loading />}></Suspense>
+     <Suspense fallback={<Loading />}>
 
      <IntlProvider
           locale={language}
@@ -45,7 +45,7 @@ function App() {
 
       </Routes>
       </IntlProvider>
-      <Suspense/>
+      </Suspense>
     </Router>
   );
 }
