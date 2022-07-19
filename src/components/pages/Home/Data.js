@@ -9,7 +9,6 @@ import pic6 from '../../../assets/banner/pic6.png'
 import logo1 from '../../../assets/banner/logo1.jpg'
 import logo2 from '../../../assets/banner/logo2.jpg'
 import logo3 from '../../../assets/banner/logo3.jpg'
-
 import { FormattedMessage } from 'react-intl'
 
 
@@ -18,15 +17,15 @@ export const Data3=[
         icon:pic1,
         name:'HTML 5',
     },
-     {
+    {
         icon:pic2,
         name:'React JS',
     },
-     {
+    {
         icon:pic3,
         name:'Java Script',
     },
-     {
+    {
         icon:pic4,
         name:'TypeScript',
     },
@@ -34,11 +33,10 @@ export const Data3=[
         icon:pic5,
         name:'MySQL',
     },
-     {
+    {
         icon:pic6,
         name:'C++',
-    },
-    
+    },   
 ]
 
 export const Data1=[

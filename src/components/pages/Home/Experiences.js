@@ -1,7 +1,6 @@
 import React from 'react'
 import {Data1} from './Data'
 import './styles/Experiences.scss'
-import {Link} from 'react-router-dom'
 import { FormattedMessage } from 'react-intl'
 
 const Experiences = () => {

@@ -9,8 +9,7 @@ import { FormattedMessage } from 'react-intl'
 
 const Footer = () => {
   return (
-    <div className='footer-container' data-aos="fade-up">
-        
+    <div className='footer-container' data-aos="fade-up"> 
      <h2><FormattedMessage id='title15'></FormattedMessage></h2>
      <h3><MdPhoneAndroid/> + 383 49217190</h3>
      <h3><HiOutlineMail/>agnesaujkani99@gmail.com</h3>

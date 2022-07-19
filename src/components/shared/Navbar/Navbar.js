@@ -10,7 +10,6 @@ import './language.scss'
 import { FormattedMessage } from 'react-intl'
 
 
-
 const Navbar = (props) => { 
     const [isSticky, setIsSticky] = useState(false);
     const [sidebar, setSidebar]=useState(false);
@@ -65,13 +64,9 @@ const Navbar = (props) => {
             language={props.language}
             /> 
             <div className='Switch'>
-          
-          <ThemeSwitcher />
-         
+             <ThemeSwitcher />
            </div>
             </div>
-
-            
             <MobileNav/>
             </div>
             
